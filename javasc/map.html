@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-shadow: black;
+}
+</style>
+<body>
+    <div class="box"></div>
+    <script>
+         
+        //map calls a function and creates a new array which perform the actions in the given array , it is basically used instead of for loop 
+
+        //[The map method calls the provided function once for each element in an array, in order .]
+
+
+        // syntax  array.map(function(currentvalue stored here, index 0,1,2,3 , arr ), thisvalue )
+
+         //we are printing here the new array 
+
+        const oldarray = ["dada", "bahadur", "indexlast"];
+
+        console.log(oldarray[0]);
+        console.log(oldarray[1]);
+        console.log(oldarray[2]);
+        console.log(oldarray+ "*"); // the only disadvantage here is we need to use join method 
+        //this is old way to access the element from the array from their particular index
+        
+        var newarray = oldarray.map(function(currvalue)
+        {
+            return currvalue;
+        })
+
+        console.log(newarray);
+
+    </script>
+</body>
+</html>
